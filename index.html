@@ -1,10 +1,3 @@
-   <path fill="#34B7F1" d="M12 2.25l2.317 1.178 2.567-.001 1.178 2.317 2.317 1.178-.001 2.567 1.178 2.317-1.178 2.317.001 2.567-2.317 1.178-1.178 2.317-2.567-.001L12 21.75l-2.317-1.178-2.567.001-1.178-2.317-2.317-1.178.001-2.567L2.25 12l1.178-2.317-.001-2.567 2.317-1.178L6.922 3.427l2.567.001L12 2.25z"/>
-    <path fill="#fff" d="M10.6 14.6l-2.2-2.2 1.1-1.1 1.1 1.1 4.4-4.4 1.1 1.1-5.5 5.5z"/>
-  </svg>
-</span>
-
- <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://cdn.shopify.com/assets/images/logos/shopify-bag.png" />
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +6,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Shopify Compliance & Growth — Advisor Dashboard</title>
 
+ <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://cdn.shopify.com/assets/images/logos/shopify-bag.png" />
+  
 <!-- Tailwind (utility helpers) + Font Awesome -->
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -440,14 +436,14 @@ h1, h2, h3, h4 {
 <!-- Loading -->
 <section id="loading" class="min-h-screen flex items-center justify-center" style="background: linear-gradient(135deg, #2a2e57 0%, #2f6164 100%);">
   <div class="max-w-xl w-full p-6 text-center">
-      <img src="https://cdn.shopify.com/assets/images/logos/shopify-bag.png" class="mx-auto h-14 mb-4" alt="Shopify"/>
+    <img src="https://cdn.shopify.com/assets/images/logos/shopify-bag.png" class="mx-auto h-14 mb-4" alt="Shopify"/>
     <h1 class="text-2xl font-semibold text-white">Connecting you with a Specialist</h1>
 <p class="mt-2" style="color: rgba(255, 255, 255, 0.6);">Preparing your secure session — this takes a moment.</p>
+
     <div class="relative mx-auto mt-8 w-28 h-28">
       <div class="w-28 h-28 rounded-full border-4 border-gray-200"></div>
       <div class="absolute inset-0 rounded-full border-4 border-[var(--green)] border-t-transparent animate-spin"></div>
       <div id="pct" class="absolute inset-0 flex items-center justify-center font-medium text-white">0%</div>
-    </div>
   </div>
 </section>
 
@@ -460,8 +456,8 @@ h1, h2, h3, h4 {
       <div class="flex items-center gap-4">
         <img src="https://cdn.shopify.com/assets/images/logos/shopify-bag.png" alt="Shopify" class="h-10"/>
         <div>
-          <h1 class="text-2xl font-bold text-gray-900">Shopify Advisor</h1>
-          <p class="text-sm text-gray-600 font-medium">Helping merchants grow safely & profitably</p>
+          <h1 class="text-2xl font-bold text-gray-900">Shopify Advisor And Growth Specialist</h1>
+          <p class="text-sm text-gray-600 font-medium">Helping shopify merchants grow safely & profitably</p>
         </div>
       </div>
       <div class="status-shopify inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold pl-6"> 
@@ -470,54 +466,74 @@ h1, h2, h3, h4 {
     </div>
   </header>
 
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-    
-    <!-- Left Column - Shopify Card Style -->
-    <aside class="card p-6 space-y-6 h-fit">
-      <div class="text-center">
-        <!-- Profile Image -->
-        <div class="profile-professional w-20 h-20 mx-auto mb-4">
-          <img src="https://i.pinimg.com/736x/2f/53/58/2f535867ec2ea063d07e3c4148d18cf8.jpg" alt="Juan Manuel" class="w-full h-full object-cover rounded-full">
-        </div>
-        <h2 class="text-xl font-bold text-gray-900">Juan Manuel <span class="inline-flex items-center">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5">
-    <path fill="#34B7F1" d="M12 2.25l2.317 1.178 2.567-.001 1.178 2.317 2.317 1.178-.001 2.567 1.178 2.317-1.178 2.317.001 2.567-2.317 1.178-1.178 2.317-2.567-.001L12 21.75l-2.317-1.178-2.567.001-1.178-2.317-2.317-1.178.001-2.567L2.25 12l1.178-2.317-.001-2.567 2.317-1.178L6.922 3.427l2.567.001L12 2.25z"/>
-    <path fill="#fff" d="M10.6 14.6l-2.2-2.2 1.1-1.1 1.1 1.1 4.4-4.4 1.1 1.1-5.5 5.5z"/>
-  </svg>
-</span>
-</h2>
-        <p class="text-sm text-gray-600 font-medium">Shopify Compliance & Growth Specialist</p>
+ <!-- Full-Screen Profile Card (Desktop Centered) -->
+<div class="w-full min-h-screen flex items-center justify-center bg-gray-50 px-6">
+  <aside class="relative w-full max-w-4xl p-8 rounded-2xl shadow-xl bg-white/90 backdrop-blur-md border border-gray-200 
+               hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 ease-out space-y-6">
+    <!-- Floating Glow Effect -->
+    <div class="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-br from-green-200 via-transparent to-blue-200 opacity-0 hover:opacity-70 blur-2xl transition duration-700"></div>
+
+    <!-- Profile -->
+    <div class="text-center animate-fadeIn">
+      <div class="w-24 h-24 mx-auto mb-4 relative">
+        <img src="https://i.pinimg.com/736x/2f/53/58/2f535867ec2ea063d07e3c4148d18cf8.jpg" 
+             alt="Juan Manuel" 
+             class="w-full h-full object-cover rounded-full border-4 border-white shadow-md">
+        <span class="absolute bottom-1 right-1 w-5 h-5 bg-green-500 border-2 border-white rounded-full animate-pulse"></span>
       </div>
+      <h2 class="text-2xl font-bold text-gray-900 flex items-center justify-center gap-2">
+        Juan Manuel
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6">
+          <path fill="#34B7F1" d="M12 2.25l2.317 1.178 2.567-.001 1.178 2.317 2.317 1.178-.001 2.567 1.178 2.317-1.178 2.317.001 2.567-2.317 1.178-1.178 2.317-2.567-.001L12 21.75l-2.317-1.178-2.567.001-1.178-2.317-2.317-1.178.001-2.567L2.25 12l1.178-2.317-.001-2.567 2.317-1.178L6.922 3.427l2.567.001L12 2.25z"/>
+          <path fill="#fff" d="M10.6 14.6l-2.2-2.2 1.1-1.1 1.1 1.1 4.4-4.4 1.1 1.1-5.5 5.5z"/>
+        </svg>
+      </h2>
+      <p class="text-sm text-gray-600 font-medium">Shopify Compliance & Growth Specialist</p>
+    </div>
 
-      <p class="text-sm text-gray-700 leading-relaxed text-center">
-        We help Shopify store owners resolve compliance challenges and unlock growth with tailored marketing, SEO, and performance optimization strategies. Share your case to get started
-      </p>
+    <!-- Bio -->
+    <p class="text-sm text-gray-700 leading-relaxed text-center max-w-2xl mx-auto animate-slideUp">
+       We partner with store owners to resolve compliance challenges and boost growth through targeted marketing, SEO, and performance optimization strategies. Share your case and take the first step.
+    </p>
 
-      <div class="space-y-3">
-        <button id="waOpenBtn" class="w-full inline-flex items-center justify-center gap-3 btn-shopify py-3 rounded-lg focus-ring font-semibold">
-          <i class="fa-brands fa-whatsapp"></i><span>Contact via WhatsApp</span>
-        </button>
-        <button onclick="openForm('telegram')" class="w-full inline-flex items-center justify-center gap-3 btn-wix py-3 rounded-lg focus-ring font-semibold">
-          <i class="fa-brands fa-telegram"></i><span>Contact via Telegram</span>
-        </button>
-        <button onclick="openForm('email')" class="w-full inline-flex items-center justify-center gap-3 bg-gray-900 hover:bg-gray-800 text-white py-3 rounded-lg focus-ring font-semibold transition-all duration-200">
+    <!-- Contact Buttons -->
+    <div class="space-y-3 max-w-md mx-auto">
+      <button id="waOpenBtn" class="relative w-full inline-flex items-center justify-center gap-3 py-3 rounded-lg font-semibold
+                   bg-gradient-to-r from-green-500 to-green-600 text-white shadow-lg hover:shadow-xl overflow-hidden group">
+        <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></span>
+        <i class="fa-brands fa-whatsapp"></i><span>Contact via WhatsApp</span>
+      </button>
+
+      <button onclick="openForm('telegram')" class="relative w-full inline-flex items-center justify-center gap-3 py-3 rounded-lg font-semibold
+                   bg-gradient-to-r from-sky-400 to-sky-600 text-white shadow-lg hover:shadow-xl overflow-hidden group">
+        <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></span>
+        <i class="fa-brands fa-telegram"></i><span>Contact via Telegram</span>
+      </button>
+      <button onclick="openForm('email')" class="w-full inline-flex items-center justify-center gap-3 bg-gray-900 hover:bg-gray-800 text-white py-3 rounded-lg focus-ring font-semibold transition-all duration-200">
           <i class="fa-solid fa-envelope"></i><span>Contact via Email</span>
         </button>
       </div>
 
-      <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
-        <h4 class="text-sm font-bold text-gray-900 mb-2">Advisor Stats</h4>
-        <div class="text-sm text-gray-700 font-medium">⭐Expert • 5+ years • 388+ stores helped • Rating 4.9/5</div>
+
+
+
+    <!-- Stats -->
+    <div class="bg-white/70 backdrop-blur-md p-4 rounded-xl border border-gray-200 shadow-sm animate-fadeIn delay-200 text-center">
+      <h4 class="text-sm font-bold text-gray-900 mb-2">Advisor Stats</h4>
+      <div class="text-sm text-gray-700 font-medium">
+        ⭐ Expert • 5+ years • 307+ stores helped • Rating 4.9/5
       </div>
-    </aside>
-    
+    </div>
+  </aside>
+</div>
+
 <!-- Animations -->
 <style>
-    @keyframes fadeIn {
+  @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
   }
-    @keyframes slideUp {
+  @keyframes slideUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
@@ -529,12 +545,12 @@ h1, h2, h3, h4 {
 <section class="ticker-section">
   <!-- Ticker text -->
   <div class="ticker-wrapper">
-  <div class="ticker">
-          🚀 Boost your Shopify store performance! • ⚡ Resolve compliance issues instantly! • 📈 Increase your SEO visibility and sales! • 💡 Expert marketing guidance!
-        </div>
+    <div class="ticker">
+      🚀 Boost your Shopify store performance! • ⚡ Resolve compliance issues instantly! • 📈 Increase your SEO visibility and sales! • 💡 Expert marketing guidance!
+    </div>
   </div>
-    
-         </div>
+
+      </div>
       <div class="hero-gallery__main-image">
         <video src="https://www.charleagency.com/assets/videos/hero-video.mp4" autoplay muted loop playsinline></video>
       </div>
@@ -542,6 +558,7 @@ h1, h2, h3, h4 {
   </div>
 </section>
 <!-- End Hero Gallery -->
+
 
 <!-- Right Column -->
 <section class="lg:col-span-2 space-y-20">
@@ -559,7 +576,7 @@ h1, h2, h3, h4 {
         🌟 Elite Shopify Services
       </h3>
       <p class="mt-6 text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
-        Designed for <span class="text-green-600 font-semibold">goal minded store owners</span> — we provide solutions that protect, scale, and future-proof your business.
+        Designed for <span class="text-green-600 font-semibold">goal minded store owners</span> - we provide solutions that protect, scale, and future-proof your business.
       </p>
     </div>
 
@@ -655,16 +672,15 @@ h1, h2, h3, h4 {
     <div class="relative z-10 text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="700">
       <p class="text-lg text-gray-700 mb-8 leading-relaxed">
         We combine <span class="text-green-600 font-semibold">strategy, technology, and creativity</span> to deliver results that matter.  
-        Not just quick fixes — but <span class="font-medium">long-term growth</span> for your Shopify store.
+        Not just quick fixes - but <span class="font-medium">long-term growth</span> for your Shopify store.
       </p>
-<a href="https://wa.me/2349135251130" target="_blank"
+     <a href="https://wa.me/2349135251130" target="_blank"
    class="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-gradient-to-r from-green-600 to-emerald-500 text-white font-semibold text-lg shadow-lg hover:shadow-green-300/70 hover:scale-105 transition">
   <i class="fa-solid fa-rocket-launch"></i> Start Your Growth Journey
 </a>
 </div>
 </div>
 </section>
-
       <!-- Ticket Section -->
       <div class="card p-6">
         <div class="flex items-start justify-between">
@@ -905,7 +921,40 @@ h1, h2, h3, h4 {
     </div>
   </div>
 </section>
-  
+
+<!-- Service Modal -->
+<div id="serviceModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="bg-white rounded-2xl shadow-lg w-full max-w-lg p-6 relative">
+    <!-- Close Button -->
+    <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800">✖</button>
+    <!-- Dynamic Title -->
+    <h2 id="modalServiceTitle" class="text-xl font-semibold mb-1 text-gray-800"></h2>
+    <p id="modalServicePrice" class="text-green-700 font-medium mb-4"></p>
+
+    <!-- Form -->
+    <form id="serviceForm" class="space-y-4">
+      <input type="hidden" id="serviceName" name="service">
+      <input type="hidden" id="servicePrice" name="price">
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" id="userName" class="w-full border rounded-lg p-2 focus:ring focus:ring-green-200" required>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="userEmail" class="w-full border rounded-lg p-2 focus:ring focus:ring-green-200" required>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Message</label>
+        <textarea id="userMessage" class="w-full border rounded-lg p-2 focus:ring focus:ring-green-200" rows="3"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+        Submit via WhatsApp
+      </button>
+    </form>
+  </div>
+</div>
+
 <script>
   // Replace with your WhatsApp number (international format, no + or spaces)
   const whatsappNumber = "2349135251130"; // Example: "15551234567"
@@ -945,11 +994,11 @@ h1, h2, h3, h4 {
   });
 </script>
 
-  
- <!-- Landscape Auto-Sliding Images with Captions -->
-<div class="landscape-slider">
-  <div class="slides-wrapper">
-    <div class="image-slide">
+
+
+  <!-- Pro Fading Images with Captions -->
+  <div class="fade-images">
+    <div class="image-slide active">
       <img src="https://www.charleagency.com/assets/images/home/grid/grid1.webp" alt="Billionaire Boys Club">
       <div class="caption">Billionaire Boys Club</div>
     </div>
@@ -961,11 +1010,54 @@ h1, h2, h3, h4 {
       <img src="https://www.charleagency.com/assets/images/home/grid/grid6.webp" alt="CleanCo">
       <div class="caption">CleanCo</div>
     </div>
-    <!-- Add the rest of your slides here the same way -->
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid9.webp" alt="RNLI">
+      <div class="caption">RNLI</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid10.webp" alt="Sunnamusk">
+      <div class="caption">Sunnamusk</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid14.webp" alt="Case furniture">
+      <div class="caption">Case Furniture</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid2.webp" alt="Cambridge Satchel">
+      <div class="caption">Cambridge Satchel</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid4.webp" alt="Candy Kittens">
+      <div class="caption">Candy Kittens</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid7.webp" alt="Gilbert Rugby">
+      <div class="caption">Gilbert Rugby</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid8.webp" alt="Unndr">
+      <div class="caption">Unndr</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid13.webp" alt="Bio&Me">
+      <div class="caption">Bio&Me</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid11.webp" alt="Vollebak">
+      <div class="caption">Vollebak</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid3.webp" alt="111Skin">
+      <div class="caption">111Skin</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid12.webp" alt="Muc-Off">
+      <div class="caption">Muc-Off</div>
+    </div>
   </div>
-</div>
-  
-     <!-- Premium Horizontal Merchant Reviews -->
+</section>
+
+   <!-- Premium Horizontal Merchant Reviews -->
 <section class="relative bg-gray-50 py-16 px-6">
   <!-- Background Glow -->
   <div class="absolute inset-0 bg-gradient-to-r from-green-500/5 via-transparent to-blue-500/5 blur-3xl"></div>
@@ -987,9 +1079,10 @@ h1, h2, h3, h4 {
           <i class="fa-solid fa-star text-yellow-400"></i>
         </div>
         <p class="text-gray-700 text-sm leading-relaxed mb-6">
-          “Juan helped us move to Shopify Plus without any downtime. The checkout is quicker now, and we’ve already seen a boost in revenue. 
-          <span class="font-semibold text-gray-900">40% in one quarter</span>, 
-          and their professionalism is truly unmatched.”
+          “Juan guided us through a Shopify Plus migration with zero downtime. 
+          Our checkout experience is now faster, and revenue jumped 
+          <span class="font-semibold text-gray-900">40% in one quarter</span>. 
+          His team’s professionalism and assistanceis unmatched.”
         </p>
         <div class="flex items-center gap-3">
           <img src="https://i.pinimg.com/736x/74/51/21/74512116a58837c06d92abc54ed0c0c2.jpg" 
@@ -1012,7 +1105,8 @@ h1, h2, h3, h4 {
           <i class="fa-solid fa-star text-yellow-400"></i>
         </div>
         <p class="text-gray-700 text-sm leading-relaxed mb-6">
-          “Thanks to Juan’s SEO and conversion strategies, our organic traffic grew by over <span class="font-semibold text-gray-900">55%</span> 
+          “Thanks to Juan’s SEO and conversion strategies, our 
+          organic traffic grew by <span class="font-semibold text-gray-900">50%</span> 
           and customer retention improved. The insights were actionable and results-driven.”
         </p>
         <div class="flex items-center gap-3">
@@ -1036,7 +1130,9 @@ h1, h2, h3, h4 {
           <i class="fa-solid fa-star text-yellow-400"></i>
         </div>
         <p class="text-gray-700 text-sm leading-relaxed mb-6">
-          “We struggled with compliance issues until Juan stepped in. Within weeks, our store was fully compliant, and we scaled ads safely, leading to a big jump in sales and peace of mind for our team <span class="font-semibold text-gray-900">30% increase</span> 
+          “We struggled with compliance issues until Juan stepped in. 
+          Within weeks, our store was fully compliant, and we scaled ads 
+          safely - leading to a <span class="font-semibold text-gray-900">30% increase</span> 
           in conversions. Truly a lifesaver.”
         </p>
         <div class="flex items-center gap-3">
@@ -1052,63 +1148,6 @@ h1, h2, h3, h4 {
   </div>
 </section>
 
-<!-- CSS -->
-<style>
-.landscape-slider {
-  position: relative;
-  width: 100%;
-  max-width: 1000px; /* wider, like YouTube */
-  margin: auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.slides-wrapper {
-  display: flex;
-  transition: transform 1s ease-in-out;
-  width: 100%;
-}
-
-.image-slide {
-  min-width: 100%; /* show one at a time */
-  position: relative;
-}
-
-.image-slide img {
-  width: 100%;
-  height: 500px; /* fixed height for landscape */
-  object-fit: cover; /* ensures image fills like YouTube */
-  display: block;
-}
-
-.caption {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0,0,0,0.6);
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 5px;
-  font-size: 18px;
-}
-</style>
-
-<!-- JS -->
-<script>
-let index = 0;
-const slidesWrapper = document.querySelector(".slides-wrapper");
-const slides = document.querySelectorAll(".image-slide");
-
-function slideShow() {
-  index++;
-  if (index >= slides.length) index = 0;
-  slidesWrapper.style.transform = `translateX(${-index * 100}%)`;
-  setTimeout(slideShow, 4000); // auto-slide every 4s
-}
-
-slideShow();
-</script>
    <!-- Premium Wix-Style Footer (No Newsletter) -->
 <footer class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-gray-300 pt-16 pb-10 px-6">
   <!-- Glow Effect -->
@@ -1179,93 +1218,202 @@ slideShow();
 </footer>
 
 
-  <!-- Service Modal -->
-<div id="serviceModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
-  <div class="bg-white rounded-2xl shadow-lg w-full max-w-lg p-6 relative">
-    <!-- Close Button -->
-    <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800">✖</button>
-    <!-- Dynamic Title -->
-    <h2 id="modalServiceTitle" class="text-xl font-semibold mb-1 text-gray-800"></h2>
-    <p id="modalServicePrice" class="text-green-700 font-medium mb-4"></p>
+<style>
+/* Layout wrapper */
+.ticker-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: "Inter", Arial, sans-serif;
+}
 
-    <!-- Form -->
-    <form id="serviceForm" class="space-y-4">
-      <input type="hidden" id="serviceName" name="service">
-      <input type="hidden" id="servicePrice" name="price">
+/* Premium ticker bar */
+.ticker-wrapper {
+  overflow: hidden;
+  background: linear-gradient(90deg, #111, #333);
+  color: #fff;
+  white-space: nowrap;
+  border-radius: 40px;
+  padding: 14px 0;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
 
-      <div>
-        <label class="block text-sm font-medium text-gray-700">Name</label>
-        <input type="text" id="userName" class="w-full border rounded-lg p-2 focus:ring focus:ring-green-200" required>
-      </div>
-      <div>
-        <label class="block text-sm font-medium text-gray-700">Email</label>
-        <input type="email" id="userEmail" class="w-full border rounded-lg p-2 focus:ring focus:ring-green-200" required>
-      </div>
-      <div>
-        <label class="block text-sm font-medium text-gray-700">Message</label>
-        <textarea id="userMessage" class="w-full border rounded-lg p-2 focus:ring focus:ring-green-200" rows="3"></textarea>
-      </div>
-      <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
-        Submit via WhatsApp
-      </button>
-    </form>
-  </div>
-</div>
+.ticker {
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker 25s linear infinite;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Pro fading slideshow */
+.fade-images {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.image-slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  opacity: 0;
+  transition: opacity 1.8s ease-in-out, transform 6s ease;
+}
+
+.image-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+}
+
+.image-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.image-slide.active img {
+  transform: scale(1);
+}
+
+/* Captions */
+.caption {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 4;
+}
+
+.image-slide.active .caption {
+  opacity: 1;
+}
+
+/* Gradient overlay */
+.fade-images::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  z-index: 3;
+  pointer-events: none;
+  border-radius: 20px;
+}
+</style>
+
+<script>
+let index = 0;
+const slides = document.querySelectorAll(".image-slide");
+
+function showNextImage() {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}
+
+setInterval(showNextImage, 5000); // 5s per slide
+</script>
+ <!-- END grid -->
+</main>
 
 <!-- Modal Contact Form -->
-<div id="modal" class="fixed inset-0 hidden items-center justify-center z-50 px-4 modal-wix">
-  <div class="modal-content-wix w-full max-w-2xl p-8 animate-fade-in">
-    <div class="flex items-start justify-between mb-6">
-      <div>
-        <h3 class="text-2xl font-bold text-gray-900">Contact Advisor</h3>
-        <div class="text-sm text-gray-600 mt-1">Ticket <span id="ticketRef" class="font-bold text-gray-900">#MD57-097</span></div>
-      </div>
-      <button aria-label="Close" id="modalCloseBtn" class="text-gray-500 hover:text-gray-800 p-2 rounded-lg hover:bg-gray-100 transition-colors">
-        <i class="fa-solid fa-xmark text-xl"></i>
-      </button>
-    </div>
-    <form id="contactForm" class="mt-6 space-y-6" onsubmit="handleSubmit(event)">
-      <input type="hidden" id="methodField" />
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div id="modal" class="fixed inset-0 hidden items-center justify-center z-50 px-3 sm:px-4">
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+
+  <!-- Modal Box -->
+  <div class="relative w-full max-w-sm sm:max-w-lg md:max-w-2xl bg-white rounded-2xl shadow-2xl flex flex-col max-h-[90vh] overflow-hidden">
+    
+    <!-- Scrollable Content -->
+    <div class="overflow-y-auto p-4 sm:p-6 md:p-8">
+      <!-- Header -->
+      <div class="flex items-start justify-between mb-6">
         <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Ticket ID</label>
-          <input id="ticketInput" type="text" value="#MD57-097" readonly class="input-shopify w-full bg-gray-50" />
+          <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">Contact Advisor</h3>
+          <div class="text-xs sm:text-sm text-gray-600 mt-1">
+            Ticket <span id="ticketRef" class="font-bold text-gray-900">#MD57-097</span>
+          </div>
         </div>
-        <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Store URL</label>
-          <input id="storeInput" type="text" class="input-shopify w-full" placeholder="yourstore.myshopify.com" />
-        </div>
-        <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Email address</label>
-          <input id="emailInput" type="text" required class="input-shopify w-full" placeholder="you@example.com" />
-        </div>
-        <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Issue type</label>
-          <select id="issueInput" required class="input-shopify w-full">
-            <option value="">Select an issue</option>
-            <option>Compliance Warning</option>
-            <option>Checkout or Payment Issues</option>
-            <option>Store Visibility / SEO</option>
-            <option>Sales Performance</option>
-            <option>Other</option>
-          </select>
-        </div>
-      </div>
-      <div>
-        <label class="block text-sm font-semibold text-gray-700 mb-2">Your name</label>
-        <input id="nameInput" type="text" required class="input-shopify w-full" />
-      </div>
-      <div>
-        <label class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
-        <textarea id="messageInput" rows="4" required class="input-shopify w-full" placeholder="Summary of the issue..."></textarea>
-      </div>
-      <div class="flex items-center justify-end gap-4 pt-4">
-        <button type="button" id="cancelBtn" class="px-6 py-3 rounded-lg border border-gray-300 font-semibold hover:bg-gray-50 transition-colors">Cancel</button>
-        <button id="submitBtn" type="submit" class="btn-shopify px-8 py-3 rounded-lg inline-flex items-center gap-2 font-semibold">
-          <span class="label">Submit</span>
+        <button aria-label="Close" id="modalCloseBtn" class="text-gray-500 hover:text-gray-800 p-2 rounded-lg hover:bg-gray-100 transition-colors">
+          <i class="fa-solid fa-xmark text-lg md:text-xl"></i>
         </button>
       </div>
-    </form>
+
+      <!-- Form -->
+      <form id="contactForm" onsubmit="handleSubmit(event)" class="space-y-5">
+        <input type="hidden" id="methodField" />
+
+        <!-- Grid Fields -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">Ticket ID</label>
+            <input id="ticketInput" type="text" value="#MD57-097" readonly class="w-full rounded-lg border border-gray-300 bg-gray-50 px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">Store URL</label>
+            <input id="storeInput" type="text" placeholder="yourstore.myshopify.com" class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">Email address</label>
+            <input id="emailInput" type="email" required placeholder="you@example.com" class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">Issue type</label>
+            <select id="issueInput" required class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm bg-white focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+              <option value="">Select an issue</option>
+              <option>Compliance Warning</option>
+              <option>Checkout or Payment Issues</option>
+              <option>Store Visibility / SEO</option>
+              <option>Salers permit</option>
+              <option>Low sales</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Name -->
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-1">Your name</label>
+          <input id="nameInput" type="text" required class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none" />
+        </div>
+
+        <!-- Message -->
+        <div class="pb-20"> <!-- padding bottom so content doesn't clash with sticky footer -->
+          <label class="block text-sm font-semibold text-gray-700 mb-1">Message</label>
+          <textarea id="messageInput" rows="4" required placeholder="Summary of the issue..." class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none"></textarea>
+        </div>
+      </form>
+    </div>
+
+    <!-- Sticky Footer -->
+    <div class="sticky bottom-0 bg-white border-t border-gray-200 flex items-center justify-end gap-3 px-4 sm:px-6 py-3 shadow-sm">
+      <button type="button" id="cancelBtn" class="px-4 py-2 sm:px-6 sm:py-2.5 rounded-lg border border-gray-300 font-medium text-sm hover:bg-gray-50 transition-colors">
+        Cancel
+      </button>
+      <button id="submitBtn" type="submit" form="contactForm" class="px-6 py-2 sm:px-8 sm:py-2.5 rounded-lg bg-indigo-600 text-white font-semibold text-sm shadow hover:bg-indigo-700 transition-colors inline-flex items-center gap-2">
+        <span class="label">Submit</span>
+      </button>
+    </div>
   </div>
 </div>
 
@@ -1283,7 +1431,7 @@ slideShow();
       </button>
     </div>
     <div class="p-6 text-sm text-gray-700 leading-relaxed">
-      👋 Hi — We help you with compliance, payments, SEO, marketing & sales. Start a chat and We'll guide you through.
+      👋 Hi — I help you with compliance, payments, SEO, marketing & sales. Start a chat and I'll guide you through.
     </div>
     <div class="px-6 pb-6 space-y-3">
       <a href="https://wa.me/2349135251130" target="_blank" class="w-full block btn-shopify text-white py-3 rounded-lg text-center font-semibold">
@@ -1373,4 +1521,17 @@ function handleSubmit(e){
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
